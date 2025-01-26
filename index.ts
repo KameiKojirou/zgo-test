@@ -1,4 +1,4 @@
-import { dlopen, FFIType, suffix, ptr, CString } from "bun:ffi";
+import { dlopen, FFIType, suffix, ptr } from "bun:ffi";
 const { i32, cstring } = FFIType;
 
 // Path to the shared library
