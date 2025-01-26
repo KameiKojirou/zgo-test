@@ -38,8 +38,7 @@ const product = lib.symbols.multiply(3, 5);
 console.log(`Product: ${product}`);
 
 // Call the `hello` function
-const nameBuffer = createCString("PythonZiggy");
-const helloPtr = lib.symbols.hello(ptr(nameBuffer)); // Pass the memory pointer
+const nameBuffer = createCString("BunTSZiggy");
 
 // Convert the pointer to a string
 const hello = new TextDecoder().decode(nameBuffer);
