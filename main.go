@@ -20,11 +20,9 @@ func main() {
 
     sum := C.add(C.int32_t(a), C.int32_t(b))
     product := C.multiply(C.int32_t(a), C.int32_t(b))
-    hello := C.hello(C.CString("Ziggy"))
+    hello := C.hello(C.CString("GoZiggy"))
 
     fmt.Printf("Sum: %d\n", int32(sum))
     fmt.Printf("Product: %d\n", int32(product))
-    fmt.Printf("Hello: %s\n", C.GoString(hello))
-    hello = C.hello(C.CString("ZiggyZoop"))
     fmt.Printf("Hello: %s\n", C.GoString(hello))
 }
